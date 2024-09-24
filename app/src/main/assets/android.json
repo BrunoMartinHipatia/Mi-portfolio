@@ -1,0 +1,20 @@
+{
+  "kebab": {
+    "name": "Kebab finder",
+    "icono": "kebabicon.png",
+    "apk": "kebab.apk",
+    "ruta": "file:///android_asset/kebabicon.png"
+  },
+  "giorgio": {
+    "name": "League games",
+    "icono": "papaicon.jpg",
+    "apk": "papa.apk",
+    "ruta": "file:///android_asset/papaicon.jpg"
+  },
+  "portfolio": {
+    "name": "Mi portfolio",
+    "icono": "logo.png",
+    "apk": "kebab",
+    "ruta": "file:///android_asset/logo.png"
+  }
+}

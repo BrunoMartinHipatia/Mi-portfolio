@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <!-- LinearLayout para la anilla a la izquierda -->
+    <LinearLayout
+        android:id="@+id/anilla"
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/anilla"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Primer TextView, ajustando el margen izquierdo para evitar superposición con la anilla -->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/black"
+        android:background="@color/bloc"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/first_surname"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_weight="25"
+        app:layout_constraintStart_toEndOf="@id/anilla"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="José" />
+
+    <TextView
+        android:id="@+id/first_surname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="@color/bloc"
+        app:layout_constraintBottom_toBottomOf="@+id/name"
+        app:layout_constraintEnd_toStartOf="@+id/seeNote"
+        app:layout_constraintHorizontal_weight="25"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toTopOf="@+id/name"
+        tools:text="Rucho" />
+
+    <ImageView
+        android:id="@+id/seeNote"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:background="@color/bloc"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/first_surname"
+        app:layout_constraintEnd_toStartOf="@+id/button_details"
+        app:layout_constraintHorizontal_weight="12.5"
+        app:layout_constraintStart_toEndOf="@+id/first_surname"
+        app:layout_constraintTop_toTopOf="@+id/first_surname"
+      android:src="@drawable/seeicon" />
+
+    <ImageButton
+        android:id="@+id/button_details"
+        android:layout_width="0dp"
+        android:background="@color/bloc"
+        android:layout_height="0dp"
+        android:contentDescription="@string/edit_note"
+        android:src="@drawable/ic_baseline_edit_24"
+        app:layout_constraintBottom_toBottomOf="@+id/seeNote"
+        app:layout_constraintEnd_toStartOf="@+id/button_delete"
+        app:layout_constraintHorizontal_weight="12.5"
+        app:layout_constraintStart_toEndOf="@+id/seeNote"
+        app:layout_constraintTop_toTopOf="@+id/seeNote" />
+
+    <ImageButton
+        android:id="@+id/button_delete"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/bloc"
+        android:contentDescription="@string/delete_student"
+        android:src="@drawable/ic_baseline_delete_24"
+        app:layout_constraintBottom_toBottomOf="@+id/button_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="12.5"
+        android:layout_marginRight="20dp"
+        app:layout_constraintStart_toEndOf="@+id/button_details"
+        app:layout_constraintTop_toTopOf="@+id/button_details" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

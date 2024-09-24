@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Este layout es especifico para poder tener una cabecera en el menu
+incluye de momento una imagen con el logo
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="6dp"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_height="13dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.3"
+        android:gravity="center_vertical"
+
+        android:textColor="#568203"
+        android:textSize="20dip"
+        android:textStyle="bold"></TextView>
+
+
+</LinearLayout>

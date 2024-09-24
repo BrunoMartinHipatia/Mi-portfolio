@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mi portfolio</string>
+    <string name="inicio">HOME</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+
+    <string name="add">add</string>
+    <string name="edit_note">Editar nota</string>
+    <string name="delete_student">delete student</string>
+    <string name="name">Name</string>
+    <string name="title">Titulo</string>
+    <string name="body">Cuerpo</string>
+    <string name="save">Save</string>
+    <string name="pin">Introduce el pin 1234</string>
+    <string name="saludo">Good morning, this is my whatsapp</string>
+    <string name="saludoPrimero">✓✓ Good morning</string>
+    <string name="gestionar_etiquetas">Gestionar Etiquetas</string>
+    <string name="cambiar_fondo">Cambiar fondo</string>
+    <string name="cambiar_el_fondo_2">Cambiar el fondo de pantalla</string>
+    <string name="cambiar_idioma">Cambiar idioma</string>
+    <string name="cambiar_el_idioma_2">Cambiar el idioma de la app</string>
+    <string name="cambiar_tema">Cambiar tema</string>
+    <string name="cambiar_tema_2">Cambiar tema de la aplicacion</string>
+    <string name="modo_oscuro">Modo oscuro</string>
+    <string name="modo_oscuro_2">Modo oscuro 2</string>
+    <string name="modo_claro">Modo claro</string>
+    <string name="cambiar_pin">Cambiar pin</string>
+    <string name="cambiar_pin_2">Cambiar pin del telefono</string>
+    <string name="introduce_el_pin">Introduce el pin antiguo</string>
+    <string name="enviar">enviar</string>
+    <string name="categorias">Categorias</string>
+    <string name="apps_android">Apps android</string>
+    <string name="webs_subidas">Webs subidas</string>
+</resources>

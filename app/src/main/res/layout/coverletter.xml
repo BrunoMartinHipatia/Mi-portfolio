@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondohome2"
+    android:layout_height="match_parent"
+>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:text="Good morning. My name is Bruno Martin, and i am a passionate mobile and web app developer. So, I'm pretty excited to formally express my interest in a position at your esteemed company.
+
+My professional experience is centered on Android development using Java, through which I have polished my skills for developing strong and user-oriented applications. I have a background in several technical areas such as cartography, augmented reality, and database management. In many of my projects, I applied these skills to create unique and engaging user experiences.
+
+I am well versed in Java. However, I am open to learning and working with Kotlin in future projects; if need be. I welcome the opportunity to apply my skills and experience on your team in support of creating solutions that are not only user but we specified exceed those expectations.
+
+Thanks for looking into my application. I look forward to the opportunity to discuss how my background, skills, and enthusiasm mirror what is needed by your company.
+"
+        android:textSize="20dp" />
+
+</LinearLayout>

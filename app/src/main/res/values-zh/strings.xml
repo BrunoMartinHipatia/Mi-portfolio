@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">我的作品集</string>
+    <string name="inicio">主页</string>
+    <string name="open_nav">打开导航抽屉</string>
+    <string name="close_nav">关闭导航抽屉</string>
+
+    <string name="add">添加</string>
+    <string name="edit_note">编辑笔记</string>
+    <string name="delete_student">删除学生</string>
+    <string name="name">姓名</string>
+    <string name="title">标题</string>
+    <string name="body">内容</string>
+    <string name="save">保存</string>
+    <string name="pin">输入 PIN 1234</string>
+    <string name="saludo">早上好，这是我的 WhatsApp</string>
+    <string name="saludoPrimero">✓✓ 早上好</string>
+    <string name="gestionar_etiquetas">管理标签</string>
+    <string name="cambiar_fondo">更换背景</string>
+    <string name="cambiar_el_fondo_2">更换壁纸</string>
+    <string name="cambiar_idioma">更改语言</string>
+    <string name="cambiar_el_idioma_2">更改应用语言</string>
+</resources>

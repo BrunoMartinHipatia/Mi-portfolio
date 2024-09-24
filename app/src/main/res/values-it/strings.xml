@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Il Mio Portfolio</string>
+    <string name="inicio">HOME</string>
+    <string name="open_nav">Apri il cassetto di navigazione</string>
+    <string name="close_nav">Chiudi il cassetto di navigazione</string>
+
+    <string name="add">Aggiungi</string>
+    <string name="edit_note">Modifica nota</string>
+    <string name="delete_student">Elimina studente</string>
+    <string name="name">Nome</string>
+    <string name="title">Titolo</string>
+    <string name="body">Corpo</string>
+    <string name="save">Salva</string>
+    <string name="pin">Inserisci il PIN 1234</string>
+    <string name="saludo">Buongiorno, questo è il mio WhatsApp</string>
+    <string name="saludoPrimero">✓✓ Buongiorno</string>
+    <string name="gestionar_etiquetas">Gestisci etichette</string>
+    <string name="cambiar_fondo">Cambia sfondo</string>
+    <string name="cambiar_el_fondo_2">Cambia lo sfondo</string>
+    <string name="cambiar_idioma">Cambia lingua</string>
+    <string name="cambiar_el_idioma_2">Cambia la lingua dell app</string>
+</resources>

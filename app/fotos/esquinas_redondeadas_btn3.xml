@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Color de fondo de la vista -->
+    <solid
+        android:color="#eaeaea" >
+    </solid>
+
+    <!-- Color y ancho del borde del elemento -->
+    <stroke
+        android:width="0.5dp"
+        android:color="#eaeaea" >
+    </stroke>
+
+
+    <corners
+        android:radius="25dp"   >
+    </corners>
+
+</shape>

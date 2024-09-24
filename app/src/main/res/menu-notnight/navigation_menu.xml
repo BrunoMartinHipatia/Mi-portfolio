@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:checkableBehavior="single"
+
+        >
+
+        <item
+            android:id="@+id/casa"
+            android:icon="@drawable/def"
+            android:title="Home"/>
+        <item
+            android:id="@+id/mapa"
+            android:title="Mapa"
+            android:icon="@drawable/def"
+            app:showAsAction="always">
+        </item>
+
+        <item
+            android:id="@+id/group"
+            android:title="Grupos"
+            android:icon="@drawable/def"
+            app:showAsAction="always">
+        </item>
+        <item
+            android:id="@+id/menu_logout"
+            android:title="Log out"
+            android:icon="@drawable/def"
+            app:showAsAction="always">
+        </item>
+        <item
+            android:id="@+id/menu_programa"
+            android:title="Programas"
+            android:icon="@drawable/def"
+            app:showAsAction="always">
+        </item>
+        <item
+            android:id="@+id/menu_evento"
+            android:title="Eventos"
+            android:icon="@drawable/def"
+            app:showAsAction="always">
+        </item>
+    </group>
+
+</menu>

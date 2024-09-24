@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whatsappfondo2"
+    android:orientation="vertical">
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/fondowhats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/whatsappfondo"></ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.05"
+        android:background="#ffffff"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:rotation="180.0"
+           android:src="@drawable/flecha"
+            >
+
+        </ImageView>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/perfil"
+
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/yo"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:text="9:30">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="15dp"
+                android:gravity="center|start"
+
+                android:text="Bruno"
+                android:textColor="@color/white"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imgTele"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="10:30"
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+         android:src="@drawable/phone"
+
+            ></ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondowhats"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/chat_bubble"
+            >
+            <TextView
+
+
+                android:layout_width="wrap_content"
+
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:text="@string/saludo"
+                >
+
+            </TextView>
+            <TextView
+
+                android:id="@+id/enlace"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:layout_height="match_parent"
+                android:text="https://wa.me/601161964"
+                >
+
+            </TextView>
+        </LinearLayout>
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/circular_background"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                   android:src="@drawable/emoji"
+                    android:layout_marginLeft="10dp"
+                    android:alpha="0.7"
+                    android:layout_gravity="center"
+                    >
+
+
+                </ImageView>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Message"
+                    android:alpha="0.4"
+                    android:layout_marginLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/white"
+
+                    ></EditText>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/micro"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                ></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

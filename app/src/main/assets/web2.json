@@ -1,0 +1,10 @@
+{
+  "pagina1":{
+    "name":"Pagina react 1",
+    "icono":"kebabicon"
+  },
+  "pagina2":{
+    "name":"Pagina react 2",
+    "icono":"papaicon"
+  }
+}
