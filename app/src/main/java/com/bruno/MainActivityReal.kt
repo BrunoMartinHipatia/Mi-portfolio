@@ -18,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.bruno.whatsapp.WhatsappActivity
 import com.bruno.bloc.SplashActivity
+import com.bruno.linkedin.LinkedinActivity
 import java.text.SimpleDateFormat
 import java.util.Calendar
 
@@ -33,6 +34,7 @@ class MainActivityReal : AppCompatActivity() {
     private lateinit var linearLayout: LinearLayout
     private lateinit var linearLayoutPin: GridLayout
     private lateinit var linearLayoutMain: LinearLayout
+    private lateinit var linearLayoutLinkedin: LinearLayout
     private lateinit var textView0: TextView
     private lateinit var textView1: TextView
     private lateinit var textView2: TextView
@@ -44,7 +46,7 @@ class MainActivityReal : AppCompatActivity() {
     private lateinit var textView8: TextView
     private lateinit var textView9: TextView
     private lateinit var textViewTexto: TextView
-    private lateinit var hora: TextView
+
     private lateinit var view: TextView
     private lateinit var textViewborrar: ImageView
     private lateinit var textViewenviar: ImageView
@@ -57,7 +59,9 @@ class MainActivityReal : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity_movil)
-
+        window.decorView.systemUiVisibility = (
+                View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                )
         // Initialize SharedPreferences for PIN
         sharedPreferencesPin = getSharedPreferences("pin_prefs", MODE_PRIVATE)
         pin = sharedPreferencesPin.getString("pin_key", "1234").toString()
@@ -66,7 +70,7 @@ class MainActivityReal : AppCompatActivity() {
         widget2 = findViewById(R.id.widget2)
         linearLayout = findViewById(R.id.principal)
         linearLayoutPin = findViewById(R.id.pin)
-        hora = findViewById(R.id.hora)
+
         linearLayoutMain = findViewById(R.id.main_layout)
         view = findViewById(R.id.view)
 
@@ -74,7 +78,7 @@ class MainActivityReal : AppCompatActivity() {
             override fun run() {
                 val timestamp = SimpleDateFormat("HH : mm").format(Calendar.getInstance().time)
                 widget.text = timestamp
-                hora.text = timestamp
+
                 handler.postDelayed(this, 1000)
                 val timestamp2 = SimpleDateFormat("EEEE, d 'of' MMMM").format(Calendar.getInstance().time)
                 widget2.text = timestamp2
@@ -104,7 +108,12 @@ class MainActivityReal : AppCompatActivity() {
             intent.putExtra("splash", "files")
             startActivity(intent)
         }
-
+        linearLayoutLinkedin = findViewById(R.id.llLinkedin)
+        linearLayoutLinkedin.setOnClickListener {
+            val intent = Intent(this, SplashActivity::class.java)
+            intent.putExtra("splash", "linkedin")
+            startActivity(intent)
+        }
         textViewTexto = findViewById(R.id.texto)
         view.text = "Introduce el pin " + pin
         textView0 = findViewById(R.id.numero0)

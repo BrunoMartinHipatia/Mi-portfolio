@@ -12,7 +12,7 @@
     <color name="gray">#373434</color>
     <color name="white">#FFFFFFFF</color>
     <color name="fondofiles">#e0edf5</color>
-
+    <color name="barra">#eef3f7</color>
     <!-- Specific Colors -->
     <color name="fondofilescajas">#f6f9fe</color>
 

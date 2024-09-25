@@ -109,12 +109,18 @@
         <activity android:name=".files.FilesPulsadoActivity"
             android:exported="true">
 
-        </activity>    </application>
+        </activity>
+        <activity android:name=".linkedin.LinkedinActivity"
+            android:exported="true">
+
+        </activity>
+    </application>
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>

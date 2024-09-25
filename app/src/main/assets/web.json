@@ -1,6 +1,8 @@
 {
-  "kebab":{
-    "name":"www.almudenamartin.com",
-    "icono":"kebabicon"
+  "Almudena": {
+    "name": "almudenamartin.es",
+    "icono": "almudenamartin.PNG",
+    "apk": " ",
+    "ruta": "file:///android_asset/almudenamartin.PNG"
   }
 }

@@ -14,6 +14,7 @@
     <!-- Colores específicos -->
     <color name="whats">#131a22</color>
     <color name="whatsapp">#3e3d3f</color>
+    <color name="barra">#eef3f7</color>
     <color name="lavender">#8692f7</color>
     <color name="bloc">#ffd000</color>
     <color name="fondogris">#2d3134</color>

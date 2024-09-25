@@ -1,17 +1,20 @@
 package com.bruno.files
 
+import android.annotation.TargetApi
 import android.content.Intent
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.provider.Settings
 import android.util.Log
+import android.webkit.WebResourceError
+import android.webkit.WebResourceRequest
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import android.widget.ListView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.FileProvider
-import androidx.core.os.LocaleListCompat
-import com.bruno.BuildConfig
 import com.bruno.R
 import org.json.JSONException
 import org.json.JSONObject
@@ -20,7 +23,6 @@ import java.io.FileOutputStream
 import java.io.IOException
 import java.io.InputStream
 import java.nio.charset.StandardCharsets
-import java.util.Locale
 
 
 class FilesPulsadoActivity : AppCompatActivity() {
@@ -28,14 +30,17 @@ class FilesPulsadoActivity : AppCompatActivity() {
     lateinit var lvAndroid: ListView
     lateinit var jsonFile: String
     lateinit var listaApks: ArrayList<String>
+    lateinit var listaNombres: ArrayList<String>
+    lateinit var webView: WebView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.filepulsado_activity)
-
+        webView = WebView(applicationContext)
+        webView.getSettings().setJavaScriptEnabled(true);
         jsonFile = intent.getStringExtra("pulsado").toString()
         lvAndroid = findViewById(R.id.lvProyectos)
         listaApks= arrayListOf()
-
+        listaNombres= arrayListOf()
         val jsonString = loadJSONFromAsset()
         if (jsonString != null) {
             try {
@@ -49,9 +54,10 @@ class FilesPulsadoActivity : AppCompatActivity() {
 
                     // Obtener nombre y ruta del icono
                     val name = item.getString("name")
-                    val ruta = item.getString("icono")
+                    val ruta: String = item.getString("icono")
                     val apk = item.getString("apk")
                     listaApks.add(apk)
+                    listaNombres.add(name)
                     // Agregar el item a la lista
                     items.add(FileItem(name, ruta))
                 }
@@ -63,9 +69,40 @@ class FilesPulsadoActivity : AppCompatActivity() {
             }
         }
         lvAndroid.setOnItemClickListener { parent, view, position, id ->
+            if(jsonFile.equals("android.json")){
+                copyApkFromAssets(listaApks.get(position))
+            }
 
-            copyApkFromAssets(listaApks.get(position))
+            if(jsonFile.equals("web.json") || jsonFile.equals("web2.json")){
+                webView .loadUrl(listaNombres.get(position));
+                setContentView(webView );
+                webView.setWebViewClient(object : WebViewClient() {
+                    @Suppress("deprecation")
+                    override fun onReceivedError(
+                        view: WebView,
+                        errorCode: Int,
+                        description: String,
+                        failingUrl: String
+                    ) {
+                        Toast.makeText(applicationContext, description, Toast.LENGTH_SHORT).show()
+                    }
 
+                    @TargetApi(Build.VERSION_CODES.M)
+                    override fun onReceivedError(
+                        view: WebView,
+                        req: WebResourceRequest,
+                        rerr: WebResourceError
+                    ) {
+                        // Redirect to deprecated method, so you can use it in all SDK versions
+                        onReceivedError(
+                            view,
+                            rerr.errorCode,
+                            rerr.description.toString(),
+                            req.url.toString()
+                        )
+                    }
+                })
+            }
         }
     }
     private fun copyApkFromAssets(str : String) {

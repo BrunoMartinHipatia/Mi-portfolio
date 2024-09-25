@@ -1,10 +1,21 @@
 {
-  "pagina1":{
-    "name":"Pagina react 1",
-    "icono":"kebabicon"
+  "users": {
+    "name": "https://github.com/BrunoMartinHipatia/6-users-app.git",
+    "icono": "git.png",
+    "apk": " ",
+    "ruta": "file:///android_asset/git.png"
   },
-  "pagina2":{
-    "name":"Pagina react 2",
-    "icono":"papaicon"
+  "cart": {
+    "name": "https://github.com/BrunoMartinHipatia/5-cart-app.git",
+    "icono": "git.png",
+    "apk": " ",
+    "ruta": "file:///android_asset/git.png"
+  },
+  "invoicex": {
+    "name": "https://github.com/BrunoMartinHipatia/4-invoice-app.git",
+    "icono": "git.png",
+    "apk": " ",
+    "ruta": "file:///android_asset/git.png"
   }
+
 }

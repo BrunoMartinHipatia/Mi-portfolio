@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.bruno.R
 import com.bruno.files.FilesActivity
+import com.bruno.linkedin.LinkedinActivity
 import com.bruno.settings.SettingsActivity
 
 class SplashActivity : AppCompatActivity() {
@@ -36,6 +37,11 @@ class SplashActivity : AppCompatActivity() {
             intentSplash = Intent(applicationContext, FilesActivity::class.java)
 
             constraint.setBackgroundDrawable(resources.getDrawable(R.drawable.filesfondo))
+        }
+        if (intent == "linkedin") {
+            intentSplash = Intent(applicationContext, LinkedinActivity::class.java)
+
+            constraint.setBackgroundDrawable(resources.getDrawable(R.drawable.linkedinfondo))
         }
 
         val thread: Thread = object : Thread() {
