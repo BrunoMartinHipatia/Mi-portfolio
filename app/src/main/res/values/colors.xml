@@ -24,6 +24,8 @@
     <color name="fondoSettings">#FF000000</color>
     <color name="textoSettings">#FFFFFFFF</color>
     <color name="fondofiles">#16232b</color>
+    <color name="barralink">#e9e6df</color>
+    e9e6df
     <!-- Tonalidades de azul para el tema oscuro -->
     <color name="blue_200">#FF81A1C1</color>
     <color name="blue_300">#FF5E81AC</color>

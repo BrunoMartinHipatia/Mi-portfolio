@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        >
+
+        <ImageView
+
+            android:id="@+id/flecha"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/flechanegro"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:id="@+id/cerrar"
+            android:background="@drawable/esquinas_redondeadas_btn1"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:rotation="180.0"
+            android:src="@drawable/flecha"
+            ></ImageView>
+        <SearchView
+            android:id="@+id/busqueda"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/esquinas_redondeadas_btn1"
+            android:queryHint="Buscar personas" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.05"
+        android:background="#ffffff"
+
+        />
+    <LinearLayout
+        android:id="@+id/llBruno"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/perfil"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:src="@drawable/yo"
+            android:layout_gravity="end"
+            android:textColor="@color/black"
+            android:text="9:30">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textSize="20dp"
+                android:text="Bruno"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:text="@string/saludoPrimero"
+                ></TextView>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:30"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llCarlos"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+  
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:src="@drawable/def"
+            android:layout_gravity="end"
+            android:textColor="@color/black"
+            android:text="9:30">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:text="Carlos"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:text="✓ Hello"
+                ></TextView>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9:30"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llJorge"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:src="@drawable/def"
+            android:layout_gravity="end"
+            android:textColor="@color/black"
+            android:text="9:30">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:text="Jorge"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:text="✓ Hello"
+                ></TextView>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8:28"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llFernando"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+        
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:src="@drawable/def"
+            android:layout_gravity="end"
+            android:textColor="@color/black"
+            android:text="9:30">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:text="Fernando"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:text="✓ Hello"
+                ></TextView>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6:14"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llRuben"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:src="@drawable/def"
+            android:layout_gravity="end"
+            android:textColor="@color/black"
+            android:text="9:30">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:text="Ruben"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:text="✓ Hello"
+                ></TextView>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yesterday"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llSilvia"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:src="@drawable/def"
+            android:layout_gravity="end"
+            android:textColor="@color/black"
+            android:text="9:30">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:text="Silvia"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:text="✓ Hello"
+                ></TextView>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yesterday"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+
+            ></TextView>
+    </LinearLayout>
+
+</LinearLayout>

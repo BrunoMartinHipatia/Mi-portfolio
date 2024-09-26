@@ -114,6 +114,14 @@
             android:exported="true">
 
         </activity>
+        <activity android:name=".linkedin.LinkedingPulsadoActivity"
+            android:exported="true">
+
+        </activity>
+        <activity android:name=".linkedin.LinkedinBrunoActivity"
+            android:exported="true">
+
+        </activity>
     </application>
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
