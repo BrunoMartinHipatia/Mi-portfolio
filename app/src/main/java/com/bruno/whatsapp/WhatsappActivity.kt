@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.SearchView
 import android.widget.TextView
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.bruno.R
 
@@ -28,12 +29,7 @@ class WhatsappActivity : AppCompatActivity() {
     private lateinit var view: View
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        window.decorView.systemUiVisibility = (
-                View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                        or View.SYSTEM_UI_FLAG_FULLSCREEN
-                        or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
-
-                )
+        enableEdgeToEdge()
         setContentView(R.layout.whatsapp_activity)
         fondowhats = findViewById(R.id.fondowhats)
         searchView = findViewById(R.id.busqueda)

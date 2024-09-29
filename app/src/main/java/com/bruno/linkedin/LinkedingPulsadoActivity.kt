@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.SearchView
 import android.widget.TextView
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.bruno.R
 import com.bruno.whatsapp.WhatsappBrunoActivity
@@ -28,14 +29,9 @@ class LinkedingPulsadoActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        window.decorView.systemUiVisibility = (
-                View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                        or View.SYSTEM_UI_FLAG_FULLSCREEN
-                        or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
 
-                )
         setContentView(R.layout.linkedinchats_activity)
-
+        enableEdgeToEdge()
         searchView = findViewById(R.id.busqueda)
 
         cerrar = findViewById(R.id.cerrar)

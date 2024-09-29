@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
     android:orientation="vertical">
 
     <LinearLayout
@@ -47,40 +48,42 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical">
+
         <View
             android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:background="@color/barralink"
-            >
+            android:layout_height="7dp"
+            android:background="@color/barralink">
 
         </View>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:layout_margin="10dp"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
-                android:orientation="vertical"
                 android:layout_marginBottom="10dp"
-             >
+                android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="65dp"
                     android:layout_weight="1"
 
-                    android:orientation="horizontal"
-                    >
+                    android:orientation="horizontal">
+
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/yo"
                         android:layout_marginTop="10dp"
-                        ></de.hdodenhof.circleimageview.CircleImageView>
+                        android:src="@drawable/yo"></de.hdodenhof.circleimageview.CircleImageView>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -89,40 +92,39 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="30dp"
-                            >
+                            android:layout_height="30dp">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Bruno Martin"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginTop="10dp"
-                                >
+                                android:text="Bruno Martin">
 
                             </TextView>
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="- Siguiendo"
-                                android:textSize="10dp"
                                 android:layout_marginLeft="5dp"
                                 android:layout_marginTop="10dp"
-                                >
+                                android:text="- Siguiendo"
+                                android:textSize="10dp">
 
                             </TextView>
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="30dp"
-                            >
+                            android:layout_height="30dp">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Desarrollador web de y dispositivos android | Web and android developer"
-
-                                android:textSize="10dp"
                                 android:layout_marginLeft="10dp"
+
+                                android:text="Desarrollador web de y dispositivos android | Web and android developer"
+                                android:textSize="10dp"
 
                                 >
 
@@ -138,54 +140,207 @@
                     android:layout_height="65dp"
                     android:layout_weight="1"
 
-                    android:orientation="vertical"
-                    >
+                    android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Quieres ver mi perfil de linkedin?"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        >
+                        android:text="Quieres ver mi perfil de linkedin?">
 
                     </TextView>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Dale click al boton del chat para buscarme"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        >
+                        android:text="Dale click al boton del chat para buscarme">
 
                     </TextView>
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+
                 android:layout_weight="1"
                 android:alpha="0.7"
-                android:layout_marginBottom="10dp"
-              >
+                android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                   android:scaleType="fitXY"
+
                     android:src="@drawable/flechaarriba"
-                    android:rotation="300"
 
                     >
 
                 </ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/like">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/numerolikes"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="423"
+
+
+                        >
+
+
+                    </TextView>
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/rtpulsado"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/rt">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/numerort"
+                        android:layout_marginLeft="2dp"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+
+
+
+                        >
+
+
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:alpha="0.3"
+                    android:background="@color/black">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/like"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+
+
+
+                            android:src="@drawable/likeicon" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/comments" />
+
+                    <ImageView
+                        android:id="@+id/rt"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/rt" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/dm" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/liketext"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="dame click" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/rttext"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="dame click" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
+
         <View
             android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:background="@color/barralink"
-            >
+            android:layout_height="7dp"
+            android:background="@color/barralink">
 
         </View>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -197,6 +352,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:alpha="0.7"
             android:orientation="horizontal">
 
             <ImageView

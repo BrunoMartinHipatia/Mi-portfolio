@@ -15,6 +15,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatDelegate
 import com.bruno.whatsapp.WhatsappActivity
 import com.bruno.bloc.SplashActivity
@@ -59,9 +60,7 @@ class MainActivityReal : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity_movil)
-        window.decorView.systemUiVisibility = (
-                View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                )
+        enableEdgeToEdge()
         // Initialize SharedPreferences for PIN
         sharedPreferencesPin = getSharedPreferences("pin_prefs", MODE_PRIVATE)
         pin = sharedPreferencesPin.getString("pin_key", "1234").toString()
