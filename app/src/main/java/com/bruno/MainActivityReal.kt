@@ -36,6 +36,7 @@ class MainActivityReal : AppCompatActivity() {
     private lateinit var linearLayoutPin: GridLayout
     private lateinit var linearLayoutMain: LinearLayout
     private lateinit var linearLayoutLinkedin: LinearLayout
+    private lateinit var linearLayoutpccomponentes: LinearLayout
     private lateinit var textView0: TextView
     private lateinit var textView1: TextView
     private lateinit var textView2: TextView
@@ -111,6 +112,12 @@ class MainActivityReal : AppCompatActivity() {
         linearLayoutLinkedin.setOnClickListener {
             val intent = Intent(this, SplashActivity::class.java)
             intent.putExtra("splash", "linkedin")
+            startActivity(intent)
+        }
+        linearLayoutpccomponentes = findViewById(R.id.llpccomponentes)
+        linearLayoutpccomponentes.setOnClickListener {
+            val intent = Intent(this, SplashActivity::class.java)
+            intent.putExtra("splash", "pccomponentes")
             startActivity(intent)
         }
         textViewTexto = findViewById(R.id.texto)
